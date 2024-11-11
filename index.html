@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الصعيدي الأصلي</title>
+    <!-- ربط ملف الـ CSS الخارجي -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>دفع عربون معرض الصعيدي</h1>
+        <p>لإتمام عملية الدفع، يرجى تحويل المبلغ عبر فودافون كاش إلى الرقم التالي:</p>
+        <p class="info">رقم محفظة فودافون كاش: 01032092547</p>
+        
+        <!-- نموذج الدفع -->
+        <form action="#" method="POST">
+            <label for="fullName">الاسم بالكامل:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="phoneNumber">الرقم الذي تم منه التحويل:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="^\d{11}$" required title="الرجاء إدخال رقم هاتف صحيح" />
+
+            <label for="amount">المبلغ (بالجنيه المصري):</label>
+            <input type="number" id="amount" name="amount" required min="1" />
+
+            <label for="carType">نوع السيارة:</label>
+            <select id="carType" name="carType" required>
+                <option value="ركوب">سيارة ركوب</option>
+                <option value="نقل">سيارة نقل</option>
+                <option value="أجرة">سيارة أجرة</option>
+            </select>
+
+            <label for="screenshot">إرفاق صورة التحويل:</label>
+            <input type="file" id="screenshot" name="screenshot" accept="image/*" required>
+
+            <button type="submit">إرسال البيانات</button>
+        </form>
+
+        <div class="note">
+            يرجى تصوير الوصل لضمان حقك في حال حدوث أي مشاكل في الدفع.
+        </div>
+    </div>
+</body>
+</html>

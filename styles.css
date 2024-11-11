@@ -1,0 +1,112 @@
+/* تنسيق عام للجسم */
+body {
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+/* تنسيق الحاوية */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق العنوان */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق النصوص البرتقالية */
+.info {
+    color: orange;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* تنسيق الحقول النصية */
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: right;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+    transition: border 0.3s ease;
+}
+
+/* تغيير لون الحدود عند التفاعل مع الحقول */
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* تنسيق الزر */
+button {
+    background: linear-gradient(to right, #28a745, #218838);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+/* تأثير التحويم على الزر */
+button:hover {
+    background: linear-gradient(to right, #218838, #28a745);
+}
+
+/* تنسيق الملاحظات */
+.note {
+    background-color: #fff9c4;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* تحسين استجابة الصفحة للأجهزة الصغيرة */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
